@@ -1,0 +1,37 @@
+//let arr=[100, 50,10,1, 0.1, 0.5, .01]
+//111.25
+
+
+function minCoinCount(n){
+let dollar=Math.floor(n)
+let cent=(n-dollar)*100
+
+if(dollar>100){
+let hundred=Math.floor(dollar/100)
+console.log("100 dollars:" +hundred )
+}
+//111-100
+if((dollar%100) > 50 ){
+
+let fifty= Math.floor((dollar%100)/50)
+console.log("50 dollars:" +fifty )
+
+
+}
+if((dollar%50) > 10 ){
+let ten= Math.floor((dollar%50)/10)
+console.log("10 dollars:" +ten )
+}
+
+if(dollar%10){
+console.log("1 dollar:" +dollar%10 )
+}
+
+}
+
+minCoinCount(770.25)
+
+
+
+
+
